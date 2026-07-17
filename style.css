@@ -37,6 +37,11 @@ main {
     padding: 0 20px 50px;
 }
 
+main h2 {
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
 footer {
     background: var(--dark);
     color: white;
@@ -77,4 +82,81 @@ footer {
     color: #bfdbfe;
     font-size: 0.9rem;
     margin-bottom: 10px;
+}
+
+.boton {
+    margin-top: 1rem;
+    display: inline-block;
+    background: white;
+    color: var(--blue);
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cuerpo {
+    max-width: 1100px;
+    margin: -30px auto 0;
+    padding: 0 20px 50px;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+}
+
+.tarjeta,
+.trabajos,
+.certs,
+.contacto {
+    margin-top: 12px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    padding: 24px;
+}
+
+.tarjeta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.tarjeta img {
+    width: 180px;
+    border-radius: 16px;
+    background: var(--gray);
+}
+
+.info ul {
+    margin-top: 12px;
+    list-style: none;
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.item {
+    padding: 12px;
+    margin-top: 10px;
+    border-left: 4px solid var(--blue);
+    border-bottom: 4px solid var(--blue);
+    background: var(--light);
+    border-radius: 8px;
+}
+
+.contacto {
+    margin-top: 24px;
+}
+
+.caja {
+    margin-top: 12px;
+    background: var(--light);
+    padding: 16px;
+    border-radius: 10px;
 }
