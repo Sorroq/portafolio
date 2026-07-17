@@ -160,3 +160,16 @@ footer {
     padding: 16px;
     border-radius: 10px;
 }
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.social a {
+    color: #bfdbfe;
+    text-decoration: none;
+}
