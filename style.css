@@ -110,7 +110,8 @@ footer {
 .tarjeta,
 .trabajos,
 .certs,
-.contacto {
+.contacto,
+.solicitud {
     margin-top: 12px;
     background: white;
     border-radius: 16px;
@@ -159,6 +160,75 @@ footer {
     background: var(--light);
     padding: 16px;
     border-radius: 10px;
+}
+
+.solicitud {
+    margin-top: 24px;
+}
+
+.solicitud h3 {
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+#formulario-solicitud {
+    display: grid;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.campo-formulario {
+    display: grid;
+    gap: 6px;
+}
+
+.campo-formulario label {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 12px;
+    color: var(--text);
+    font: inherit;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.boton-enviar {
+    justify-self: start;
+    border: 0;
+    border-radius: 8px;
+    background: var(--blue);
+    color: white;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background: #1d4ed8;
+}
+
+.mensaje-solicitud:empty {
+    display: none;
+}
+
+.mensaje-solicitud {
+    overflow-wrap: anywhere;
 }
 
 .social {

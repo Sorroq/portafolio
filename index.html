@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio | Salvador Rodríguez</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,6 +16,7 @@
             <a href="#presentacion">Presentación</a>
             <a href="#certificados">Certificados</a>
             <a href="#contacto">Contacto</a>
+            <a href="#formulario-solicitud">Solicitar trabajo</a>
         </nav>
         <div class="portada" id="inicio">
             <div>
@@ -23,7 +24,7 @@
                 <h1>Hola, soy Salvador Rodriguez</h1>
                 <p class="texto">Creo sitios web modernos, funcionales y con una experiencia visual atractiva para
                     marcas y negocios.</p>
-                <a href="#contacto" class="boton">Contáctame</a>
+                <a href="#formulario-solicitud" class="boton">Solicitar trabajo</a>
             </div>
         </div>
     </header>
@@ -75,6 +76,24 @@
                 <p><strong>Ciudad:</strong> Argentina, Tucuman </p>
             </div>
         </section>
+        <form class="solicitud" id="formulario-solicitud" onsubmit="formularioSolicitud(event)">
+            <h2>Envíame una solicitud</h2>
+            <p>Cuéntame qué trabajo necesitas realizar y me pondré en contacto contigo.</p>
+            <div class="campo-formulario">
+                <label for="nombre-solicitud">Nombre</label>
+                <input id="nombre-solicitud" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="correo-solicitud">Gmail o correo electrónico</label>
+                <input id="correo-solicitud" name="correo" type="email" autocomplete="email" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="comentario-solicitud">¿Qué trabajo necesitas realizar?</label>
+                <textarea id="comentario-solicitud" name="comentario" rows="5" required></textarea>
+            </div>
+            <button class="boton-enviar" type="submit">Enviar solicitud</button>
+            <p class="mensaje-solicitud" id="mensaje-solicitud" role="status" aria-live="polite"></p>
+        </form>
     </main>
 
     <footer>
@@ -85,6 +104,7 @@
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
